@@ -16,6 +16,6 @@ spec:
    spec:
       containers:
         - name: deployment-container
-          image: aishwarya5502/vertex6december:1
+          image: aishwarya5502/vertex6december:2
           ports:
           - containerPort: 8080

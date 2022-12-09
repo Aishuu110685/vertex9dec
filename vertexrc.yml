@@ -15,6 +15,6 @@ spec:
      spec: 
          containers:
          - name: mytomcat-container
-           image: aishwarya5502/myjavaimage4dec22
+           image: aishwarya5502/vertex6december:1
            ports:
            - containerPort: 8080 

@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vertex-deploy
+  labels:
+    app: vertexapp
+spec: 
+  replicas: 3
+  selector:
+     matchLabels:
+       app: vertexapp
+  template:
+   metadata: 
+      labels:  
+         app: vertexapp
+   spec:
+      containers:
+        - name: deployment-container
+          image: aishwarya5502/vertex6december:1
+          ports:
+          - containerPort: 8080
